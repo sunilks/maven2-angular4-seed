@@ -16,9 +16,9 @@ Needed a way to use the system available node, npm & mvn to install angular.io d
 - mvn tasks to clean up & create (prod ready JIT) deployable war file
 
 ## Rules
-- Global libs, scripts: use the scripts section in .angular-cli.json
-- Global styles:  use scripts section in .angular-cli.json or src/styles.css
-- Use *src/assets* folder for files that need to be copied just as is.
+- Global libs, scripts: use the scripts section in *.angular-cli.json*.
+- Global styles:  use scripts section in *.angular-cli.json* or *src/styles.css*.
+- Use *src/assets* folder for files that need to be copied as is.
 
 ## Usage as is
 * Clone the project
