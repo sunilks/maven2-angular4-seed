@@ -32,3 +32,17 @@ Access using: [http://<server>:<port>/artifactId-version]http://<server>:<port>/
 Ensure node & npm is installed - will use the native one (won't download node or npm)
 Ensure all dependencies are appropriately mentioned in save or save-dev
 Can also work standalone - unzip; cd to unzipped folder - run mvn clean install!
+
+## To build this project:
+
+Run `$ mvn clean install`
+
+## Issues, Contributing
+
+Please post any issues on the [Github's Issue tracker](https://github.com/eirslett/frontend-maven-plugin/issues). 
+[Pull requests](https://github.com/eirslett/frontend-maven-plugin/pulls) are welcome! 
+You can find a full list of [contributors here](https://github.com/eirslett/frontend-maven-plugin/graphs/contributors).
+
+## License
+
+[MIT](LICENSE)
