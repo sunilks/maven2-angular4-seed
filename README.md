@@ -50,7 +50,7 @@ Please follow these steps:
 * **basedir/dist/**: folder in basedir housing the files created post the build (JIT prod mode)
 
 ## Dependencies & Must-haves
-* Ensure node & npm is installed - will use the native one (won't download node or npm)
+* Ensure mvn, node & npm is installed - uses natively installed versions. (*won't download node or npm*)
 * Ensure all dependencies are appropriately mentioned in `package.json` using save or save-dev
 
 ## To build this project:
