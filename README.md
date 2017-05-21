@@ -24,7 +24,6 @@ Use src/assets folder for files that need to be copied just as is.
 * Clone the project
 * Navigate to **basedir** 
 * Run `mvn clean install`
-* Enjoy!
 
 ## Usage in your project
 Please follow these steps:
@@ -32,23 +31,25 @@ Please follow these steps:
 `ng new *<basedir>*`
 * All necessary folder structure will be created, henceforth referred as **basedir**
 * Replace following files within appropriate folders:
-**pom.xml**: add to basedir.
-**pom.xml**: in new pom.xml change *artifactId* and *version* to appropriate value
-**.angular-cli.json**: extract to basedir, has been modified
-**style.css**: extract to basedir/src 
-**src/index.html**: change *basehref* to `/artifactId-version/`.
+* **pom.xml**: add to basedir.
+* **.angular-cli.json**: add to basedir
+* **style.css**: add to basedir/src 
+* **src/index.html**: change *basehref* to `/artifactId-version/` (*include the slashes*).
 * Run `mvn clean install` to recompile 
 * Creates a deployable war file **artifactId-version.war**
 * Deploy **artifactId-version.war** to app/web servers (e.g., wildfly et al.).
 * Access using: `[http://<server>:<port>/artifactId-version]http://<server>:<port>/artifactId-version`
+* **Enjoy!**
 
 ## Folders
-**basedir**: folder that houses your project
-**basedir/target**: folder in basedir will have the generated war
+* **basedir**: folder that houses your project
+* **basedir/target**: folder in basedir with generated war
+* **basedir/src/**: folder in basedir with angular.io application, assets & configurations
+* **basedir/dist/**: folder in basedir housing the files created post the build (JIT prod mode)
 
 ## Dependencies & Must-haves
 * Ensure node & npm is installed - will use the native one (won't download node or npm)
-* Ensure all dependencies are appropriately mentioned using save or save-dev
+* Ensure all dependencies are appropriately mentioned in `package.json` using save or save-dev
 
 ## To build this project:
 * Run `$ mvn clean install`
@@ -60,8 +61,10 @@ Please follow these steps:
 
 ## Issues, Contributing
 
-Please post any issues on the [Github's Issue tracker](https://github.com/sunilks/maven2-angular4-seed/issues). 
-[Pull requests](https://github.com/sunilks/maven2-angular4-seed/pulls) are welcome! 
+Please post any issues on the [Github's Issue tracker](https://github.com/sunilks/maven2-angular4-seed/issues).
+
+All [Pull requests](https://github.com/sunilks/maven2-angular4-seed/pulls) are welcome! 
+
 You can find a full list of [contributors here](https://github.com/sunilks/maven2-angular4-seed/graphs/contributors).
 
 ## License
