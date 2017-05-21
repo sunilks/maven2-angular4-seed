@@ -16,9 +16,9 @@ Needed a way to use the system available node, npm & mvn to install angular.io d
 - mvn tasks to clean up & create (prod ready JIT) deployable war file
 
 ## Rules
-Global libs, scripts: use the scripts section in .angular-cli.json
-Global styles:  use scripts section in .angular-cli.json or src/styles.css
-Use src/assets folder for files that need to be copied just as is.
+- Global libs, scripts: use the scripts section in .angular-cli.json
+- Global styles:  use scripts section in .angular-cli.json or src/styles.css
+- Use *src/assets* folder for files that need to be copied just as is.
 
 ## Usage as is
 * Clone the project
@@ -27,18 +27,20 @@ Use src/assets folder for files that need to be copied just as is.
 
 ## Usage in your project
 Please follow these steps:
-* Create parent project folder using angular-cli (ng)
-`ng new *<basedir>*`
+* Create parent project folder using angular-cli `ng new <basedir>`
 * All necessary folder structure will be created, henceforth referred as **basedir**
 * Replace following files within appropriate folders:
-* **pom.xml**: add to basedir.
-* **.angular-cli.json**: add to basedir
-* **style.css**: add to basedir/src 
-* **src/index.html**: change *basehref* to `/artifactId-version/` (*include the slashes*).
+* *pom.xml*: add to **basedir**.
+* *.angular-cli.json*: add to **basedir**.
+* *style.css*: add to **basedir/src**. 
+* *src/index.html*: change *basehref* to `/artifactId-version/` (*include the slashes*).
 * Run `mvn clean install` to recompile 
-* Creates a deployable war file **artifactId-version.war**
+* Installs the node dependencies and builds the project using JIT in prod mode.
+* Creates built artifacts & files in **basedir/src/dist** folder.
+* Copies artifacts & files from **basedir/src/dist** folder to WEB-INF in **basedir/target** folder.
+* Builds the files into a deployable WAR file **artifactId-version.war** in **basedir/target** folder.
 * Deploy **artifactId-version.war** to app/web servers (e.g., wildfly et al.).
-* Access using: `[http://<server>:<port>/artifactId-version]http://<server>:<port>/artifactId-version`
+* Access using the appropriate link: `[http://<server>:<port>/artifactId-version]http://<server>:<port>/artifactId-version`
 * **Enjoy!**
 
 ## Folders
