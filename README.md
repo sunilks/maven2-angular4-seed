@@ -1,23 +1,31 @@
 # maven2-angular4-seed
-Created a maven 2 project for angular.io v4.1.3+ which can run npm &amp; ng that is natively installed
+A maven 2 project for angular.io v4.1.3+ which can run npm &amp; ng that is natively installed
+
+## Documentation
+Needed a way to use the system available node, npm & mvn to install angular.io dependencies and create a JIT bundles and then using mvn pom to create a web container deployable WAR file. So here goes, hope this helps all those looking for such a solution!
+
+## What's included? The bells & whistles...
+- Created using angular-cli
+- Uses system installed node & npm
+- D3 (needs to be imported)
+- Bootstrap 3 (js + css)
+- Tether.js
+- JQuery (needs to be imported)
+- Angular Material enabled
+- Latest versions of @angular (+4.1.3) and its dependencies
+- mvn tasks to clean up & create (prod ready JIT) deployable war file
+
+## Dependencies & Must-haves
 
 
-D3 (needs to be imported)
-Bootstrap 3 (js + css)
-Tether.js
-Jquery (needs to be imported)
-Angular Material
-Plus latest versions of @angular and its dependencies
-created using ng new
-Included with mvn task to create (prod ready JIT) deployable war file
-
-ALL MUST follow these Rules:
+## Rules
 Global libs, scripts: use the scripts section in .angular-cli.json
 Global styles:  use scripts section in .angular-cli.json or src/styles.css
 Use src/assets folder for files that need to be copied just as is.
 
-mvn tasks - till we have configured global pom.xml, please follow these steps:
-Create parent project folder for e.g., iemrdash (per the attached example) using ng new iemrdash
+## Usage
+Please follow these steps:
+### Create parent project folder for e.g., iemrdash (per the attached example) using ng new iemrdash
 All necessary folder structure will be created, henceforth will be called basedir
 Extract the attached zip and copy/replace in the new folder only the following files to appropriate folders:
 pom.xml: extract from attached zip to basedir.
