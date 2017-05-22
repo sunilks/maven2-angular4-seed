@@ -22,7 +22,7 @@ Needed a way to use the system available node, npm & mvn to install angular.io d
 
 ## Usage as is
 * Clone the project `git clone https://github.com/sunilks/maven2-angular4-seed.git`
-* Navigate to **mvn2ang2** `cd mvn2ang2` 
+* Navigate to **mvn2ng2** `cd mvn2ang2` 
 * Run `mvn clean install`
 
 ## Usage in your project
