@@ -15,7 +15,13 @@ Needed a way to use the system available node, npm & mvn to install angular.io d
 - Latest versions of @angular (+4.1.3) and its dependencies
 - mvn tasks to clean up & create (prod ready JIT) deployable war file
 
+## Dependencies & Must-haves
+* Ensure mvn, node & npm is installed - uses natively installed versions. (*won't download node or npm*)
+* Ensure all dependencies are appropriately mentioned in `package.json` using save or save-dev
+
 ## Rules
+Some rules that should be followed:
+#### angular2
 - Global libs, scripts: use the scripts section in *.angular-cli.json*.
 - Global styles:  use scripts section in *.angular-cli.json* or *src/styles.css*.
 - Use *src/assets* folder for files that need to be copied as is.
@@ -48,10 +54,6 @@ Please follow these steps:
 * **basedir/target**: folder in basedir with generated war
 * **basedir/src/**: folder in basedir with angular.io application, assets & configurations
 * **basedir/dist/**: folder in basedir housing the files created post the build (JIT prod mode)
-
-## Dependencies & Must-haves
-* Ensure mvn, node & npm is installed - uses natively installed versions. (*won't download node or npm*)
-* Ensure all dependencies are appropriately mentioned in `package.json` using save or save-dev
 
 ## To build this project:
 * Run `$ mvn clean install`
