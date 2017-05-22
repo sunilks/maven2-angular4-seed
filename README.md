@@ -10,6 +10,7 @@ Needed a way to use the system available node, npm & mvn to install angular.io d
 - D3 (needs to be imported)
 - Bootstrap 3 (js + css)
 - Tether.js
+- Font Awesome
 - JQuery (needs to be imported)
 - Angular Material enabled
 - Latest versions of @angular (+4.1.3) and its dependencies
